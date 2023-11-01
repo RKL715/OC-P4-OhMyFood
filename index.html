@@ -4,8 +4,15 @@
 <head>
    <meta charset="UTF-8">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <link rel="stylesheet" href="assets/styles.css">
+   <!--Style-->
+   <link rel="stylesheet" href="assets/CSS/styles.css">
+   <!--Icons-->
    <script src="https://kit.fontawesome.com/aaeba219f2.js" crossorigin="anonymous"></script>
+   <!--Fonts-->
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;500&family=Shrikhand&display=swap"
+      rel="stylesheet">
    <title>Oh My Food</title>
 </head>
 
@@ -13,21 +20,23 @@
 
 <header>
    <h1>ohmyfood</h1>
-   <p><i class="fa-solid fa-location-dot"></i> Paris, Belleville</p>
+   <div class="header__location">
+      <p><i class="fa-solid fa-location-dot"></i> Paris, Belleville</p>
+   </div>
 </header>
 
 <!--A-INTRO-->
 
 <body>
-   <div class="Introduction">
+   <section class="Introduction">
       <h2>Réservez le menu qui vous convient</h2>
       <p>Découvrez des restaurants d'exception, sélectionnés par nos soins.</p>
       <button class="Explorer">Explorer nos restaurants</button>
-   </div>
+   </section>
 
    <!--B-TUTO-->
 
-   <section>
+   <section class="Tuto">
       <h2>Fonctionnement</h2>
       <p><span>1</span> <i class="fa-solid fa-mobile-screen"></i> Choisissez un restaurant</p>
       <p><span>2</span> <i class="fa-solid fa-list"></i> Composez votre menu</p>

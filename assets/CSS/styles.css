@@ -1,0 +1,73 @@
+/* GENERAL */
+* {
+  font: 100% "Roboto", sans-serif;
+  margin: 0%;
+}
+
+p {
+  font-weight: 300;
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+  padding: 25px;
+}
+
+h2 {
+  font-size: 24px;
+}
+
+/* Header */
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+header h1 {
+  font: 30px "Shrikhand", serif;
+}
+header .header__location {
+  background-color: #eaeaea;
+  width: 100%;
+  padding: 25px;
+  box-shadow: inset 0px 2px 4px rgba(0, 0, 0, 0.15);
+}
+header .header__location p {
+  display: flex;
+  justify-content: center;
+  gap: 17px;
+  font-size: 16px;
+}
+
+/* A-INTRO */
+.Introduction {
+  background-color: #f6f6f6;
+}
+.Introduction h2 {
+  padding-top: 5px;
+}
+.Introduction p {
+  font-size: 18px;
+}
+
+button {
+  border-radius: 25px;
+  padding: 15px;
+  background-image: linear-gradient(to bottom, #ff79da, #9356dc);
+  width: 15em;
+  color: white;
+  cursor: pointer;
+  border: none;
+  margin: 0 auto;
+}
+
+/* B-TUTO */
+.tuto p {
+  border-radius: 20px;
+  border: 15px solid black;
+  background-color: #f6f6f6;
+}/*# sourceMappingURL=styles.css.map */
