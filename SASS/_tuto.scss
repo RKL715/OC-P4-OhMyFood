@@ -1,0 +1,11 @@
+.Tuto__Steps {
+  p {
+    @include small_card;
+  }
+  .Number {
+    background-color: $main-color;
+    border-radius: 30px;
+    border: 15px solid $main-color;
+    color: #eaeaea;
+  }
+}

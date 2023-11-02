@@ -1,0 +1,9 @@
+@mixin buttons {
+  border-radius: 25px;
+  padding: 15px;
+  background-image: linear-gradient(to bottom, #ff79da, #9356dc);
+  width: 15em;
+  color: white;
+  cursor: pointer;
+  border: none;
+}

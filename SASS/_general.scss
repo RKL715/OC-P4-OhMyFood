@@ -1,0 +1,12 @@
+* {
+  font: 100% $text-font;
+  margin: 0%;
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+  padding: 25px;
+}
