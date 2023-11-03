@@ -1,0 +1,73 @@
+OhMyFood
+
+Charte graphique :
+
+Polices
+Logo et titres : Shrikhand
+Texte : Roboto
+
+Consignes :
+
+Couleurs
+Primaire : #9356DC
+Secondaire : #FF79DA
+Tertiaire : #99E2D0
+
+- SASS
+- Pas de JS
+- Mobile First - Responsive
+- Les fichiers sources .scss ainsi que le code compilé CSS doivent être disponibles dans un ou plusieurs fichiers dédiés.
+- Aucun framework
+- Pas d'inline CSS
+- Versioning GITHUB / Commits reguliers
+- Site accessible sur Github
+
+- W3C ok
+- Firefox / Chrome ok
+
+CONTENUS ATTENDUS :
+
+            Main page
+
+Affichage de la localisation des restaurants.
+Une courte présentation de l’entreprise.
+Une section contenant les 4 menus sous forme de cartes. Au clic sur la carte, l’utilisateur est redirigé vers la page du menu.
+
+            Menus (x4)
+
+Menu des restaurants
+
+            Footer
+
+Identique à toutes les pages
+Lien contact fonctionnel, redirection vers mail.
+
+            Header
+
+Sur toutes les pages
+Sur la main page, il contient le logo
+Sur les menus, il contient en plus un bouton retour vers main page
+
+ANIMATIONS :
+
+            Boutons
+
+Au survol, la couleur de fond des boutons principaux devra légèrement s’éclaircir. L’ombre portée devra également être plus visible.
+Le bouton "J’aime" en forme de cœur : au clic, il devra se remplir progressivement. Pour cette première version, l’effet peut apparaître au
+survol sur desktop au lieu du clic.
+
+            Main page
+
+Un “loader”, design libre mais respect charte grpahique du site.
+Temps d'affichage : 1 à 3 secs.
+Où : Main page, couverture intégrale de l'écran.
+Comment : Animation CSS uniquement.
+
+         Menus
+
+Apparition des plats progressive, avec décalage dans le temps.
+Soit 1 par 1. Soit par groupe (“Entrée”, “Plat” et “Dessert”).
+Lors du clic d'ajout d'un plat à la commande, apparation d'une petite coche à droite du plat.
+Cette coche devra coulisser de la droite vers la gauche.
+Pour cette première version, l’effet peut apparaître au survol sur desktop au lieu du clic.
+Si l’intitulé du plat est trop long, il devra être rogné avec des points de suspension.
