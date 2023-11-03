@@ -1,4 +1,7 @@
-.Tuto__Steps {
+@import '_variables';
+@import '_mixins';
+
+.tuto__steps {
   p {
     @include small_card;
   }

@@ -1,11 +1,6 @@
-/* GENERAL */
-* {
-  font: 100% "Roboto", sans-serif;
+body {
+  font: 3rem;
   margin: 0%;
-}
-
-p {
-  font-weight: 300;
 }
 
 section {
@@ -16,19 +11,23 @@ section {
   padding: 25px;
 }
 
+h1 {
+  font: 30px "Shrikhand", serif;
+}
+
 h2 {
   font-size: 24px;
 }
 
-/* Header */
+p {
+  font-weight: 300;
+}
+
 header {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-}
-header h1 {
-  font: 30px "Shrikhand", serif;
 }
 header .header__location {
   background-color: #eaeaea;
@@ -43,7 +42,6 @@ header .header__location p {
   font-size: 16px;
 }
 
-/* A-INTRO */
 .Introduction {
   background-color: #f6f6f6;
 }
@@ -65,9 +63,16 @@ button {
   margin: 0 auto;
 }
 
-/* B-TUTO */
-.tuto p {
+.tuto__steps p {
   border-radius: 20px;
-  border: 15px solid black;
+  border: 15px solid #f6f6f6;
   background-color: #f6f6f6;
-}/*# sourceMappingURL=styles.css.map */
+}
+.tuto__steps .Number {
+  background-color: #9356dc;
+  border-radius: 30px;
+  border: 15px solid #9356dc;
+  color: #eaeaea;
+}
+
+/*# sourceMappingURL=styles.css.map */

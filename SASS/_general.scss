@@ -1,5 +1,7 @@
-* {
-  font: 100% $text-font;
+@import '_variables';
+
+body {
+  font: 3rem;
   margin: 0%;
 }
 
@@ -9,4 +11,16 @@ section {
   align-items: center;
   gap: 15px;
   padding: 25px;
+}
+
+h1 {
+  font: 30px $title-font;
+}
+
+h2 {
+  font-size: 24px;
+}
+
+p {
+  font-weight: 300;
 }
