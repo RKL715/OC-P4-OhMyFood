@@ -4,7 +4,6 @@
 .tuto__steps {
   display: flex;
   flex-direction: column;
-  justify-content: center;
   width: 100%;
 
   .fa-solid {
@@ -15,18 +14,21 @@
   .fa-store {
     color: $main-color;
   }
-  p {
+  ul {
     @include small_card;
+    position: relative;
   }
   .Number {
-    display: inline-block;
     text-align: center;
     background-color: $main-color;
     border-radius: 50%;
-    // border: 15px solid $main-color;
+
     color: #eaeaea;
     height: 25px;
     width: 25px;
     font-size: larger;
+    position: absolute;
+    left: -25px;
+    top: 10px;
   }
 }

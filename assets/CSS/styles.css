@@ -66,7 +66,6 @@ button {
 .tuto__steps {
   display: flex;
   flex-direction: column;
-  justify-content: center;
   width: 100%;
 }
 .tuto__steps .fa-solid {
@@ -77,15 +76,15 @@ button {
 .tuto__steps .fa-store {
   color: #9356dc;
 }
-.tuto__steps p {
+.tuto__steps ul {
   border-radius: 20px;
   border: 15px solid #f6f6f6;
   background-color: #f6f6f6;
   box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
   height: 45px;
+  position: relative;
 }
 .tuto__steps .Number {
-  display: inline-block;
   text-align: center;
   background-color: #9356dc;
   border-radius: 50%;
@@ -93,6 +92,9 @@ button {
   height: 25px;
   width: 25px;
   font-size: larger;
+  position: absolute;
+  left: -25px;
+  top: 10px;
 }
 
 /*# sourceMappingURL=styles.css.map */
