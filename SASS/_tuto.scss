@@ -31,4 +31,13 @@
     left: -25px;
     top: 10px;
   }
+
+  p {
+    font-size: larger;
+    font-weight: 500;
+    font-family: $text-font;
+    position: relative;
+    bottom: 5px;
+    right: 15px;
+  }
 }
