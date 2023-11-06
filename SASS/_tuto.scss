@@ -2,13 +2,31 @@
 @import '_mixins';
 
 .tuto__steps {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+
+  .fa-solid {
+    color: #7e7e7e;
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+  .fa-store {
+    color: $main-color;
+  }
   p {
     @include small_card;
   }
   .Number {
+    display: inline-block;
+    text-align: center;
     background-color: $main-color;
-    border-radius: 30px;
-    border: 15px solid $main-color;
+    border-radius: 50%;
+    // border: 15px solid $main-color;
     color: #eaeaea;
+    height: 25px;
+    width: 25px;
+    font-size: larger;
   }
 }
