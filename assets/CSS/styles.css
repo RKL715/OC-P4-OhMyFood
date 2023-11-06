@@ -163,4 +163,28 @@ main {
   font-size: 14px;
 }
 
+footer {
+  background-color: #353535;
+  color: white;
+  padding-left: 5%;
+}
+footer h4 {
+  font-family: "Shrikhand", serif;
+  font-weight: 400;
+  font-size: 18px;
+  padding-top: 5%;
+  padding-left: 2.5rem;
+}
+footer li {
+  list-style: none;
+  padding-bottom: 5%;
+}
+footer li .fa-handshake {
+  transform: rotate(-35deg);
+  padding-right: 1px;
+}
+footer li i {
+  padding-right: 7px;
+}
+
 /*# sourceMappingURL=styles.css.map */
