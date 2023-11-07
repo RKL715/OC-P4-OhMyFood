@@ -32,15 +32,23 @@ h5 {
 .menu_carte {
   @include carte_menu;
   .menu_carte_content {
-    position: relative;
-    bottom: 2.5rem;
-    line-height: 0%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    .menu_carte_content_title {
+      font-size: 18px;
+      font-weight: 400;
+      font-family: $text-font;
+    }
+
+    //  position: relative;
+    //  bottom: 2.5rem;
+    line-height: 0px;
+    align-content: center;
   }
 
   .prix {
-    position: absolute;
-    right: 1rem;
-    top: 2rem;
+    justify-self: end;
+    align-self: flex-end;
     font-weight: 700;
     font-size: 15px;
   }
