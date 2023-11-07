@@ -205,10 +205,25 @@ footer li i {
   max-width: 100%;
   height: 100%;
   object-fit: cover;
+  display: block;
 }
 
-.page_restaurant_menu h4 {
+.page_restaurant_menu {
+  background-color: #f6f6f6;
+  border-radius: 50px;
+  position: relative;
+  top: -40px;
+  width: 95%;
+  z-index: 1;
+}
+
+h4 {
   font-family: "Shrikhand", serif;
+  font-size: 28px;
+  font-weight: 400;
+}
+h4 i {
+  padding-left: 30%;
 }
 
 /*# sourceMappingURL=styles.css.map */
