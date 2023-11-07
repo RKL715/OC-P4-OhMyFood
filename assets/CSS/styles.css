@@ -214,20 +214,22 @@ footer li i {
   border-radius: 50px;
   position: relative;
   top: -40px;
-  width: 95%;
   z-index: 1;
 }
 
-h4 {
+.restaurant_name {
   font-family: "Shrikhand", serif;
   font-size: 28px;
   font-weight: 400;
+  display: flex;
+  flex-direction: row;
+  gap: 10%;
 }
-h4 i {
-  padding-left: 30%;
+.restaurant_name i {
+  justify-content: flex-end;
 }
 
-h5 {
+.menu_type_title {
   font-family: "Roboto", sans-serif;
   font-weight: 300;
   width: 100%;
