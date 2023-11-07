@@ -1,0 +1,47 @@
+@import '_variables';
+@import '_mixins';
+
+.page_restaurant_menu {
+  background-color: $background-light;
+  border-radius: 50px;
+  position: relative;
+  top: -40px;
+  width: 95%;
+  z-index: 1;
+}
+
+h4 {
+  font-family: $title_font;
+  font-size: 28px;
+  font-weight: 400;
+  i {
+    padding-left: 30%;
+  }
+}
+
+h5 {
+  font-family: $text-font;
+  font-weight: 300;
+  width: 100%;
+}
+.underline {
+  padding-bottom: 5px;
+  border-bottom: 3px solid $tertiary-color;
+}
+
+.menu_carte {
+  @include carte_menu;
+  .menu_carte_content {
+    position: relative;
+    bottom: 2.5rem;
+    line-height: 0%;
+  }
+
+  .prix {
+    position: absolute;
+    right: 1rem;
+    top: 2rem;
+    font-weight: 700;
+    font-size: 15px;
+  }
+}
