@@ -1,12 +1,15 @@
 @import '_variables';
 @import '_mixins';
 
+.restaurant_body {
+  background-color: $background-light;
+}
+
 .page_restaurant_menu {
   background-color: $background-light;
   border-radius: 50px;
   position: relative;
   top: -40px;
-  z-index: 1;
 }
 
 .restaurant_name {

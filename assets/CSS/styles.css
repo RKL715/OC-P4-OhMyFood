@@ -40,6 +40,7 @@ header {
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  background-color: white;
 }
 header .header__location {
   background-color: #eaeaea;
@@ -214,12 +215,15 @@ footer li a {
   display: block;
 }
 
+.restaurant_body {
+  background-color: #f6f6f6;
+}
+
 .page_restaurant_menu {
   background-color: #f6f6f6;
   border-radius: 50px;
   position: relative;
   top: -40px;
-  z-index: 1;
 }
 
 .restaurant_name {
