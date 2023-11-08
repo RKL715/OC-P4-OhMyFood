@@ -33,24 +33,36 @@
 
 .menu_carte {
   @include carte_menu;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+
   .menu_carte_content {
+    box-sizing: border-box;
     overflow: hidden;
-    text-overflow: ellipsis;
     .menu_carte_content_title {
       font-size: 18px;
       font-weight: 400;
       font-family: $text-font;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      box-sizing: border-box;
+      margin-top: 0%;
+      margin-bottom: 0;
+      white-space: nowrap;
     }
-
-    //  position: relative;
-    //  bottom: 2.5rem;
-    line-height: 0px;
-    align-content: center;
+    p {
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+    }
+    // line-height: 0px;
   }
 
   .prix {
-    justify-self: end;
-    align-self: flex-end;
+    display: flex;
+    align-items: end;
     font-weight: 700;
     font-size: 15px;
   }

@@ -16,6 +16,7 @@
   }
   ul {
     @include small_card;
+    height: 45px;
     position: relative;
   }
   .Number {

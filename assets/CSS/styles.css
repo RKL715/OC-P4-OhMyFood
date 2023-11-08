@@ -186,6 +186,9 @@ footer li .fa-handshake {
 footer li i {
   padding-right: 7px;
 }
+footer li a {
+  color: white;
+}
 
 .page_restaurant_header {
   display: flex;
@@ -245,24 +248,37 @@ footer li i {
   border: 15px solid #f6f6f6;
   background-color: #f6f6f6;
   box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
-  height: 45px;
   width: 100%;
   display: flex;
+  min-height: auto;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
 }
 .menu_carte .menu_carte_content {
+  box-sizing: border-box;
   overflow: hidden;
-  text-overflow: ellipsis;
-  line-height: 0px;
-  align-content: center;
 }
 .menu_carte .menu_carte_content .menu_carte_content_title {
   font-size: 18px;
   font-weight: 400;
   font-family: "Roboto", sans-serif;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  box-sizing: border-box;
+  margin-top: 0%;
+  margin-bottom: 0;
+  white-space: nowrap;
+}
+.menu_carte .menu_carte_content p {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 .menu_carte .prix {
-  justify-self: end;
-  align-self: flex-end;
+  display: flex;
+  align-items: end;
   font-weight: 700;
   font-size: 15px;
 }
