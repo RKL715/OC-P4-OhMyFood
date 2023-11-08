@@ -64,7 +64,7 @@ header .header__location p {
   font-size: 18px;
 }
 
-button {
+.Explorer {
   border-radius: 25px;
   padding: 15px;
   background-image: linear-gradient(to bottom, #ff79da, #9356dc);
@@ -72,6 +72,8 @@ button {
   color: white;
   cursor: pointer;
   border: none;
+  font-size: 16px;
+  font-weight: 500;
   margin: 0 auto;
 }
 
@@ -275,12 +277,30 @@ footer li a {
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
+  margin-bottom: 0;
 }
 .menu_carte .prix {
   display: flex;
   align-items: end;
   font-weight: 700;
   font-size: 15px;
+  margin: 0;
+}
+
+.commander_part {
+  display: flex;
+  justify-content: center;
+}
+.commander_part .commander {
+  border-radius: 25px;
+  padding: 15px;
+  background-image: linear-gradient(to bottom, #ff79da, #9356dc);
+  width: 15em;
+  color: white;
+  cursor: pointer;
+  border: none;
+  font-size: 16px;
+  font-weight: 500;
 }
 
 /*# sourceMappingURL=styles.css.map */

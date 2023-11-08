@@ -56,8 +56,8 @@
       overflow: hidden;
       text-overflow: ellipsis;
       white-space: nowrap;
+      margin-bottom: 0;
     }
-    // line-height: 0px;
   }
 
   .prix {
@@ -65,5 +65,14 @@
     align-items: end;
     font-weight: 700;
     font-size: 15px;
+    margin: 0;
   }
+}
+
+.commander_part {
+  .commander {
+    @include buttons;
+  }
+  display: flex;
+  justify-content: center;
 }
