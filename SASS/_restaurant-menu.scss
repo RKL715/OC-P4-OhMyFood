@@ -1,29 +1,6 @@
 @import '_variables';
 @import '_mixins';
 
-.restaurant_body {
-  background-color: $background-light;
-}
-
-.page_restaurant_menu {
-  background-color: $background-light;
-  border-radius: 50px;
-  position: relative;
-  top: -40px;
-}
-
-.restaurant_name {
-  font-family: $title_font;
-  font-size: 28px;
-  font-weight: 400;
-  display: flex;
-  flex-direction: row;
-  gap: 10%;
-  i {
-    justify-content: flex-end;
-  }
-}
-
 .menu_type_title {
   font-family: $text-font;
   font-weight: 300;

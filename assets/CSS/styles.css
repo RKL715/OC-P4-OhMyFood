@@ -196,13 +196,12 @@ footer li a {
 .page_restaurant_header {
   display: flex;
   flex-direction: row;
-  gap: 15px;
-  position: relative;
+  gap: 60px;
+  padding-right: 5em;
 }
 .page_restaurant_header .retour {
-  position: absolute;
-  left: 15px;
   cursor: pointer;
+  font-size: 30px;
 }
 
 .page_restaurant_top {
