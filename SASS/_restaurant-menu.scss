@@ -1,20 +1,21 @@
 @import '_variables';
 @import '_mixins';
+
 .menu_type {
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 15px;
-}
-.menu_type_title {
-  font-family: $text-font;
-  font-size: 16px;
-  font-weight: 300;
-  width: 100%;
-}
-.underline {
-  padding-bottom: 5px;
-  border-bottom: 3px solid $tertiary-color;
+  .menu_type_title {
+    font-family: $text-font;
+    font-size: 16px;
+    font-weight: 300;
+    width: 100%;
+  }
+  .underline {
+    padding-bottom: 5px;
+    border-bottom: 3px solid $tertiary-color;
+  }
 }
 
 @keyframes comeIn {
@@ -26,10 +27,22 @@
   }
 }
 
+.menu_carte_entrees {
+  animation: comeIn 0.5s cubic-bezier(1, 0.03, 0.83, 0.67);
+}
+
+.menu_carte_plats {
+  animation: comeIn 1s cubic-bezier(1, 0.03, 0.83, 0.67);
+}
+
+.menu_carte_desserts {
+  animation: comeIn 1.5s cubic-bezier(1, 0.03, 0.83, 0.67);
+}
+
 .menu_carte {
   @include carte_menu;
-  // Animation
-  animation: comeIn 1s ease;
+  // // Animation
+  // animation: comeIn 1s ease;
   .menu_carte_content {
     box-sizing: border-box;
     overflow: hidden;
@@ -41,20 +54,19 @@
       font-size: 18px;
       font-weight: 500;
       font-family: $text-font;
-      // Control
+      // Hide
       overflow: hidden;
       text-overflow: ellipsis;
       white-space: nowrap;
     }
     p {
       margin-bottom: 0;
-      // Control
+      // Hide
       overflow: hidden;
       text-overflow: ellipsis;
       white-space: nowrap;
     }
   }
-
   .prix {
     display: flex;
     align-self: flex-end;
@@ -68,6 +80,7 @@
   .commander {
     @include buttons;
   }
+  margin-top: 40px;
   display: flex;
   justify-content: center;
 }
