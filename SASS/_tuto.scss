@@ -1,6 +1,11 @@
 @import '_variables';
 @import '_mixins';
 
+.tuto {
+  background-color: white;
+  align-items: flex-start;
+}
+
 .tuto__steps {
   display: flex;
   flex-direction: column;

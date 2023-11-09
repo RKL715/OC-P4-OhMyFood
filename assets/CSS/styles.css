@@ -1,6 +1,7 @@
 body {
   font: 3rem;
   margin: 0%;
+  background-color: #f6f6f6;
 }
 
 section {
@@ -52,20 +53,23 @@ header .header__location p {
   display: flex;
   justify-content: center;
   gap: 17px;
+  margin-top: 5px;
+  margin-bottom: 5px;
   font-size: 16px;
 }
 
-.Introduction {
+.introduction {
   background-color: #f6f6f6;
+  text-align: center;
 }
-.Introduction h2 {
+.introduction h2 {
   padding-top: 5px;
 }
-.Introduction p {
+.introduction p {
   font-size: 18px;
 }
 
-.Explorer {
+.explorer {
   border-radius: 25px;
   padding: 15px;
   background-image: linear-gradient(to bottom, #ff79da, #9356dc);
@@ -76,6 +80,11 @@ header .header__location p {
   font-size: 16px;
   font-weight: 500;
   margin: 0 auto;
+}
+
+.tuto {
+  background-color: white;
+  align-items: flex-start;
 }
 
 .tuto__steps {
@@ -169,7 +178,6 @@ main {
 footer {
   background-color: #353535;
   color: white;
-  padding-left: 5%;
 }
 footer h4 {
   font-family: "Shrikhand", serif;

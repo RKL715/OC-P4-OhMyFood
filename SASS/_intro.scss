@@ -1,8 +1,9 @@
 @import '_variables';
 @import '_mixins';
 
-.Introduction {
+.introduction {
   background-color: $background-light;
+  text-align: center;
   h2 {
     padding-top: 5px;
   }
@@ -11,7 +12,7 @@
   }
 }
 
-.Explorer {
+.explorer {
   @include buttons;
   margin: 0 auto;
 }
