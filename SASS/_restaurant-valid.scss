@@ -2,17 +2,29 @@
 @import '_mixins';
 
 .valid {
-  color: $tertiary-color;
-  transform: scaleX(-1);
-  rotate: 40deg;
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 40px;
-  background-color: #ffffff;
-  border-radius: 50%;
-  height: 50px;
-  width: 50px;
+  background-color: $tertiary-color;
+  border-radius: 0 15px 15px 0;
+  height: 4.5rem;
+  width: 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 
-  &:hover {
-    transform: rotate(40deg);
+  .valid_icon {
+    color: $tertiary-color;
+    transform: scaleX(-1);
+    rotate: 40deg;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    background-color: #ffffff;
+    border-radius: 50%;
+    height: 20px;
+    width: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    &:hover {
+      transform: rotate(40deg);
+    }
   }
 }

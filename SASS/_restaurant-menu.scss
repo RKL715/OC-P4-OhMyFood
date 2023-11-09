@@ -12,41 +12,50 @@
   border-bottom: 3px solid $tertiary-color;
 }
 
+@keyframes comeIn {
+  from {
+    transform: scale(0);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+
 .menu_carte {
   @include carte_menu;
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-end;
-
+  // Animation
+  animation: comeIn 1s ease;
   .menu_carte_content {
     box-sizing: border-box;
     overflow: hidden;
+    padding-left: 3%;
+    line-height: 20px;
     .menu_carte_content_title {
+      margin: 0;
+      // Font
       font-size: 18px;
-      font-weight: 400;
+      font-weight: 500;
       font-family: $text-font;
+      // Control
       overflow: hidden;
       text-overflow: ellipsis;
-      box-sizing: border-box;
-      margin-top: 0%;
-      margin-bottom: 0;
       white-space: nowrap;
     }
     p {
+      margin-bottom: 0;
+      // Control
       overflow: hidden;
       text-overflow: ellipsis;
       white-space: nowrap;
-      margin-bottom: 0;
     }
   }
 
   .prix {
     display: flex;
-    align-items: end;
+    align-self: flex-end;
     font-weight: 700;
     font-size: 15px;
-    margin: 0;
+    padding-right: 2%;
   }
 }
 
