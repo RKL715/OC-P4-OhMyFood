@@ -307,4 +307,19 @@ footer li a {
   font-weight: 500;
 }
 
+.valid {
+  color: #99e2d0;
+  transform: scaleX(-1);
+  rotate: 40deg;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 40px;
+  background-color: #ffffff;
+  border-radius: 50%;
+  height: 50px;
+  width: 50px;
+}
+.valid:hover {
+  transform: rotate(40deg);
+}
+
 /*# sourceMappingURL=styles.css.map */
