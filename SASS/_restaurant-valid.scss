@@ -23,7 +23,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    &:hover {
+    &:focus {
       transform: rotate(40deg);
     }
   }

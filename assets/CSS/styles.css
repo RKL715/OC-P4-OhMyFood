@@ -245,23 +245,6 @@ footer li a {
   justify-content: flex-end;
 }
 
-.menu_type {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 15px;
-}
-.menu_type .menu_type_title {
-  font-family: "Roboto", sans-serif;
-  font-size: 16px;
-  font-weight: 300;
-  width: 100%;
-}
-.menu_type .underline {
-  padding-bottom: 5px;
-  border-bottom: 3px solid #99e2d0;
-}
-
 @keyframes comeIn {
   from {
     transform: scale(0);
@@ -280,6 +263,23 @@ footer li a {
 
 .menu_carte_desserts {
   animation: comeIn 1.5s cubic-bezier(1, 0.03, 0.83, 0.67);
+}
+
+.menu_type {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+}
+.menu_type .menu_type_title {
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  font-weight: 300;
+  width: 100%;
+}
+.menu_type .underline {
+  padding-bottom: 5px;
+  border-bottom: 3px solid #99e2d0;
 }
 
 .menu_carte {
@@ -363,8 +363,17 @@ footer li a {
   justify-content: center;
   align-items: center;
 }
-.valid .valid_icon:hover {
+.valid .valid_icon:focus {
   transform: rotate(40deg);
+}
+
+@keyframes comeIn {
+  from {
+    transform: scale(0);
+  }
+  to {
+    transform: scale(1);
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */

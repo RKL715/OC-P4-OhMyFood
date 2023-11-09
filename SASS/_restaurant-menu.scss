@@ -1,6 +1,21 @@
 @import '_variables';
 @import '_mixins';
+@import '_animations';
 
+// Animations
+.menu_carte_entrees {
+  animation: comeIn 0.5s cubic-bezier(1, 0.03, 0.83, 0.67);
+}
+
+.menu_carte_plats {
+  animation: comeIn 1s cubic-bezier(1, 0.03, 0.83, 0.67);
+}
+
+.menu_carte_desserts {
+  animation: comeIn 1.5s cubic-bezier(1, 0.03, 0.83, 0.67);
+}
+
+// Titres types menus
 .menu_type {
   display: flex;
   flex-direction: column;
@@ -18,31 +33,9 @@
   }
 }
 
-@keyframes comeIn {
-  from {
-    transform: scale(0);
-  }
-  to {
-    transform: scale(1);
-  }
-}
-
-.menu_carte_entrees {
-  animation: comeIn 0.5s cubic-bezier(1, 0.03, 0.83, 0.67);
-}
-
-.menu_carte_plats {
-  animation: comeIn 1s cubic-bezier(1, 0.03, 0.83, 0.67);
-}
-
-.menu_carte_desserts {
-  animation: comeIn 1.5s cubic-bezier(1, 0.03, 0.83, 0.67);
-}
-
+// Elements cartes
 .menu_carte {
   @include carte_menu;
-  // // Animation
-  // animation: comeIn 1s ease;
   .menu_carte_content {
     box-sizing: border-box;
     overflow: hidden;
@@ -76,6 +69,7 @@
   }
 }
 
+// Button commande
 .commander_part {
   .commander {
     @include buttons;
