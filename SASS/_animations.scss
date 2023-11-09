@@ -11,3 +11,11 @@
 // COEUR
 
 // VALID
+@keyframes valid {
+  from {
+    transform: scale(0);
+  }
+  to {
+    transform: scale(1);
+  }
+}
