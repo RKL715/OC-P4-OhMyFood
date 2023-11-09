@@ -216,8 +216,8 @@ footer li a {
   padding: 0%;
 }
 .page_restaurant_top img {
-  max-width: 100%;
-  height: 100%;
+  width: 100%;
+  height: 20em;
   object-fit: cover;
   display: block;
 }
