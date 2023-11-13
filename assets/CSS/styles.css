@@ -117,8 +117,8 @@ header .header__location p {
   width: 25px;
   font-size: larger;
   position: absolute;
-  left: -25px;
-  top: 10px;
+  left: -15px;
+  top: 25px;
 }
 .tuto__steps p {
   font-size: larger;
@@ -126,7 +126,7 @@ header .header__location p {
   font-family: "Roboto", sans-serif;
   position: relative;
   bottom: 5px;
-  right: 15px;
+  left: 5px;
 }
 
 main {
