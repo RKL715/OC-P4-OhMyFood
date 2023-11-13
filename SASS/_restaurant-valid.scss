@@ -6,9 +6,6 @@
     display: flex;
     animation: valid-in 0.3s forwards;
   }
-  .prix {
-    right: 15%;
-  }
 }
 
 .menu_carte {
@@ -21,11 +18,13 @@
   background-color: $tertiary-color;
   border-radius: 0 15px 15px 0;
   height: 4.5rem;
-  width: 3rem;
+  width: 5rem;
   display: flex;
   align-items: center;
   justify-content: center;
   cursor: pointer;
+  margin-left: 0;
+  padding-left: 0;
 
   .valid_icon {
     color: $tertiary-color;

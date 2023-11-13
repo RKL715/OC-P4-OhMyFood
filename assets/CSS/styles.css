@@ -256,23 +256,21 @@ footer li a {
 @keyframes valid-in {
   from {
     transform: translateX(150%);
-    opacity: 0;
-    visibility: visible;
+    display: none;
   }
   to {
     transform: translateX(0%);
-    opacity: 1;
+    display: flex;
   }
 }
 @keyframes valid-out {
   from {
     transform: translateX(0%);
-    opacity: 1;
+    display: flex;
   }
   to {
     transform: translateX(150%);
-    opacity: 0;
-    visibility: hidden;
+    display: none;
   }
 }
 .menu_carte_entrees {
@@ -344,10 +342,7 @@ footer li a {
   align-self: flex-end;
   font-weight: 700;
   font-size: 15px;
-  padding-right: 2%;
-  position: absolute;
-  right: 2%;
-  transition: right 0.5s;
+  padding-right: 5%;
 }
 
 .commander_part {
@@ -371,9 +366,6 @@ footer li a {
   display: flex;
   animation: valid-in 0.3s forwards;
 }
-.menu_carte:hover .prix {
-  right: 15%;
-}
 
 .menu_carte .valid {
   animation: valid-out 0.3s forwards;
@@ -383,11 +375,13 @@ footer li a {
   background-color: #99e2d0;
   border-radius: 0 15px 15px 0;
   height: 4.5rem;
-  width: 3rem;
+  width: 5rem;
   display: flex;
   align-items: center;
   justify-content: center;
   cursor: pointer;
+  margin-left: 0;
+  padding-left: 0;
 }
 .valid .valid_icon {
   color: #99e2d0;
@@ -417,23 +411,21 @@ footer li a {
 @keyframes valid-in {
   from {
     transform: translateX(150%);
-    opacity: 0;
-    visibility: visible;
+    display: none;
   }
   to {
     transform: translateX(0%);
-    opacity: 1;
+    display: flex;
   }
 }
 @keyframes valid-out {
   from {
     transform: translateX(0%);
-    opacity: 1;
+    display: flex;
   }
   to {
     transform: translateX(150%);
-    opacity: 0;
-    visibility: hidden;
+    display: none;
   }
 }
 

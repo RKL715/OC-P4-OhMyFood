@@ -14,23 +14,21 @@
 @keyframes valid-in {
   from {
     transform: translateX(150%);
-    opacity: 0;
-    visibility: visible;
+    display: none;
   }
   to {
     transform: translateX(0%);
-    opacity: 1;
+    display: flex;
   }
 }
 
 @keyframes valid-out {
   from {
     transform: translateX(0%);
-    opacity: 1;
+    display: flex;
   }
   to {
     transform: translateX(150%);
-    opacity: 0;
-    visibility: hidden;
+    display: none;
   }
 }
