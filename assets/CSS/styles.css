@@ -79,7 +79,12 @@ header .header__location p {
   border: none;
   font-size: 16px;
   font-weight: 500;
+  box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
   margin: 0 auto;
+}
+.explorer:hover {
+  box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.35);
+  opacity: 85%;
 }
 
 .tuto {
@@ -360,6 +365,11 @@ footer li a {
   border: none;
   font-size: 16px;
   font-weight: 500;
+  box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
+}
+.commander_part .commander:hover {
+  box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.35);
+  opacity: 85%;
 }
 
 .menu_carte:hover .valid {
