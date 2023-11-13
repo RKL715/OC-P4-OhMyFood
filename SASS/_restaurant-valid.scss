@@ -1,0 +1,46 @@
+@import '_variables';
+@import '_mixins';
+
+.menu_carte:hover {
+  .valid {
+    display: flex;
+    animation: valid-in 0.3s forwards;
+  }
+  .prix {
+    right: 15%;
+  }
+}
+
+.menu_carte {
+  .valid {
+    animation: valid-out 0.3s forwards;
+  }
+}
+
+.valid {
+  background-color: $tertiary-color;
+  border-radius: 0 15px 15px 0;
+  height: 4.5rem;
+  width: 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+
+  .valid_icon {
+    color: $tertiary-color;
+    transform: scaleX(-1);
+    rotate: 40deg;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    background-color: #ffffff;
+    border-radius: 50%;
+    border: none;
+    height: 20px;
+    width: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+  }
+}

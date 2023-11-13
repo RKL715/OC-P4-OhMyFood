@@ -1,0 +1,85 @@
+@import '_variables';
+@import '_mixins';
+@import '_animations';
+
+// Animations
+.menu_carte_entrees {
+  animation: comeIn 0.5s cubic-bezier(1, 0.03, 0.83, 0.67);
+}
+
+.menu_carte_plats {
+  animation: comeIn 1s cubic-bezier(1, 0.03, 0.83, 0.67);
+}
+
+.menu_carte_desserts {
+  animation: comeIn 1.5s cubic-bezier(1, 0.03, 0.83, 0.67);
+}
+
+// Titres types menus
+.menu_type {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+  .menu_type_title {
+    font-family: $text-font;
+    font-size: 16px;
+    font-weight: 300;
+    width: 100%;
+  }
+  .underline {
+    padding-bottom: 5px;
+    border-bottom: 3px solid $tertiary-color;
+  }
+}
+
+// Elements cartes
+.menu_carte {
+  position: relative;
+  cursor: pointer;
+  @include carte_menu;
+  .menu_carte_content {
+    box-sizing: border-box;
+    overflow: hidden;
+    padding-left: 3%;
+    line-height: 20px;
+    .menu_carte_content_title {
+      margin: 0;
+      // Font
+      font-size: 18px;
+      font-weight: 500;
+      font-family: $text-font;
+      // Hide
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+    }
+    p {
+      margin-bottom: 0;
+      // Hide
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+    }
+  }
+  .prix {
+    display: flex;
+    align-self: flex-end;
+    font-weight: 700;
+    font-size: 15px;
+    padding-right: 2%;
+    position: absolute;
+    right: 2%;
+    transition: right 0.5s;
+  }
+}
+
+// Button commande
+.commander_part {
+  .commander {
+    @include buttons;
+  }
+  margin-top: 40px;
+  display: flex;
+  justify-content: center;
+}
