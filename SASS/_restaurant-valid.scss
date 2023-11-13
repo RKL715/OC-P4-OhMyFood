@@ -1,6 +1,22 @@
 @import '_variables';
 @import '_mixins';
 
+.menu_carte:hover {
+  .valid {
+    display: flex;
+    animation: valid-in 0.3s forwards;
+  }
+  .prix {
+    right: 15%;
+  }
+}
+
+.menu_carte {
+  .valid {
+    animation: valid-out 0.3s forwards;
+  }
+}
+
 .valid {
   background-color: $tertiary-color;
   border-radius: 0 15px 15px 0;
@@ -9,6 +25,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  cursor: pointer;
 
   .valid_icon {
     color: $tertiary-color;
@@ -25,8 +42,5 @@
     justify-content: center;
     align-items: center;
     cursor: pointer;
-    &:focus {
-      animation: valid 1s linear;
-    }
   }
 }

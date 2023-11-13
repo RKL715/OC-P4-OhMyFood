@@ -11,11 +11,26 @@
 // COEUR
 
 // VALID
-@keyframes valid {
+@keyframes valid-in {
   from {
-    transform: scale(0);
+    transform: translateX(150%);
+    opacity: 0;
+    visibility: visible;
   }
   to {
-    transform: scale(1);
+    transform: translateX(0%);
+    opacity: 1;
+  }
+}
+
+@keyframes valid-out {
+  from {
+    transform: translateX(0%);
+    opacity: 1;
+  }
+  to {
+    transform: translateX(150%);
+    opacity: 0;
+    visibility: hidden;
   }
 }
