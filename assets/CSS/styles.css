@@ -373,12 +373,15 @@ footer li a {
 }
 
 .menu_carte:hover .valid {
+  opacity: 1;
   display: flex;
   animation: valid-in 0.3s forwards;
 }
 
 .menu_carte .valid {
   animation: valid-out 0.3s forwards;
+  opacity: 0;
+  transition: opacity 250ms;
 }
 
 .valid {
