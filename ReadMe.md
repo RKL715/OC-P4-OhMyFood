@@ -1,6 +1,6 @@
 **A améliorer :**
 
-- checkmard animation
+- checkmark animation
 
 # OhMyFood
 
@@ -46,7 +46,7 @@ Tertiaire : #99E2D0
 **Footer**
 
 - [x] Identique à toutes les pages
-- [ ] Lien contact fonctionnel, redirection vers mail.
+- [x] Lien contact fonctionnel, redirection vers mail.
 
 **Header**
 
@@ -59,7 +59,7 @@ Tertiaire : #99E2D0
 **Boutons**
 
 - [x] Au survol, la couleur de fond des boutons principaux devra légèrement s’éclaircir. L’ombre portée devra être plus visible.
-- [ ] Le bouton "J’aime" en forme de cœur : au clic, il devra se remplir progressivement. Pour cette première version, l’effet peut apparaître au survol sur desktop au lieu du clic.
+- [x] Le bouton "J’aime" en forme de cœur : au clic, il devra se remplir progressivement. Pour cette première version, l’effet peut apparaître au survol sur desktop au lieu du clic.
 
 **Main pag**
 
@@ -76,3 +76,8 @@ Tertiaire : #99E2D0
       Cette coche devra coulisser de la droite vers la gauche.
       Pour cette première version, l’effet peut apparaître au survol sur desktop au lieu du clic.
       Si l’intitulé du plat est trop long, il devra être rogné avec des points de suspension.
+
+**Responsive**
+
+- [x] Mobile first
+- [ ] Format tab & desktop
