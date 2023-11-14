@@ -161,11 +161,10 @@ main {
   line-height: 5px;
   width: 80%;
 }
-.restaurants__card .card_content .fa-heart {
+.restaurants__card .card_content .heart {
   position: absolute;
   right: 25px;
   bottom: 10px;
-  font-size: 1.5rem;
 }
 .restaurants__card .card_content .nouveau {
   background-color: #99e2d0;
@@ -258,6 +257,17 @@ footer li a {
     transform: scale(1);
   }
 }
+.heart {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+svg path:hover {
+  fill: url(#linear-hover);
+  stroke: none;
+}
+
 @keyframes valid-in {
   from {
     transform: translateX(150%);
@@ -421,6 +431,17 @@ footer li a {
     transform: scale(1);
   }
 }
+.heart {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+svg path:hover {
+  fill: url(#linear-hover);
+  stroke: none;
+}
+
 @keyframes valid-in {
   from {
     transform: translateX(150%);

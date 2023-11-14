@@ -9,7 +9,18 @@
 }
 
 // COEUR
+.heart {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
 
+svg {
+  path:hover {
+    fill: url(#linear-hover);
+    stroke: none;
+  }
+}
 // VALID
 @keyframes valid-in {
   from {
