@@ -4,9 +4,6 @@ footer {
   background-color: $footer-background;
   color: white;
   margin-bottom: 0%;
-  menu {
-    margin-bottom: 0%;
-  }
   h4 {
     font-family: $title-font;
     font-weight: 400;
@@ -17,7 +14,7 @@ footer {
   ul {
     list-style: none;
     padding-bottom: 5%;
-    padding-left: 0;
+
     line-height: 1.5;
     margin-bottom: 0%;
     li {
