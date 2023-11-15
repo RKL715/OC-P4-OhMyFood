@@ -101,6 +101,7 @@ menu .tuto__steps {
   display: flex;
   flex-direction: column;
   width: 100%;
+  gap: 15px;
 }
 menu .tuto__steps .fa-solid {
   color: #7e7e7e;
@@ -110,7 +111,7 @@ menu .tuto__steps .fa-solid {
 menu .tuto__steps .fa-store {
   color: #9356dc;
 }
-menu .tuto__steps ul {
+menu .tuto__steps .tuto__steps_card {
   border-radius: 20px;
   padding: 3%;
   background-color: #f6f6f6;
