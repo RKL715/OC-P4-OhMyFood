@@ -191,6 +191,9 @@ footer {
   background-color: #353535;
   color: white;
 }
+footer menu {
+  margin-bottom: 0%;
+}
 footer h4 {
   font-family: "Shrikhand", serif;
   font-weight: 400;
