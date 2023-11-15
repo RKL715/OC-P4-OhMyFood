@@ -192,6 +192,7 @@ main {
 footer {
   background-color: #353535;
   color: white;
+  margin-bottom: 0%;
 }
 footer menu {
   margin-bottom: 0%;
@@ -203,18 +204,24 @@ footer h4 {
   padding-top: 5%;
   padding-left: 2.5rem;
 }
-footer li {
+footer ul {
   list-style: none;
   padding-bottom: 5%;
+  padding-left: 0;
+  line-height: 1.5;
+  margin-bottom: 0%;
 }
-footer li .fa-handshake {
+footer ul li {
+  font-family: "Roboto", sans-serif;
+}
+footer ul .fa-handshake {
   transform: rotate(-35deg);
   padding-right: 1px;
 }
-footer li i {
+footer ul i {
   padding-right: 7px;
 }
-footer li a {
+footer ul a {
   color: white;
 }
 

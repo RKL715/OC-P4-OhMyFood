@@ -3,6 +3,7 @@
 footer {
   background-color: $footer-background;
   color: white;
+  margin-bottom: 0%;
   menu {
     margin-bottom: 0%;
   }
@@ -13,9 +14,15 @@ footer {
     padding-top: 5%;
     padding-left: 2.5rem;
   }
-  li {
+  ul {
     list-style: none;
     padding-bottom: 5%;
+    padding-left: 0;
+    line-height: 1.5;
+    margin-bottom: 0%;
+    li {
+      font-family: $text-font;
+    }
 
     .fa-handshake {
       transform: rotate(-35deg);
