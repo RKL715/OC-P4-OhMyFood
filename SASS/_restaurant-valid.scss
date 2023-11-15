@@ -2,11 +2,15 @@
 @import '_mixins';
 
 .menu_carte:hover {
+  // &.menu_carte {
+  //   justify-items: end;
+  // }
   .valid {
+    display: flex;
+    justify-self: flex-end;
     opacity: 1;
     display: flex;
     animation: valid-in 0.3s forwards;
-    // &carte { just between}
   }
 }
 
@@ -32,8 +36,7 @@
 
   .valid_icon {
     color: $tertiary-color;
-    transform: scaleX(-1);
-    transform: rotate(40deg);
+    transform: scaleX(-1) rotate(-40deg);
     font-family: Arial, Helvetica, sans-serif;
     font-size: 20px;
     background-color: #ffffff;
