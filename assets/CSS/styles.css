@@ -92,26 +92,26 @@ header .header__location p {
   align-items: flex-start;
 }
 
-menu {
+.tuto_part {
   align-self: center;
   width: 100%;
   padding: 0;
 }
-menu .tuto__steps {
+.tuto_part .tuto__steps {
   display: flex;
   flex-direction: column;
   width: 100%;
   gap: 15px;
 }
-menu .tuto__steps .fa-solid {
+.tuto_part .tuto__steps .fa-solid {
   color: #7e7e7e;
   padding-left: 5%;
   padding-right: 5%;
 }
-menu .tuto__steps .fa-store {
+.tuto_part .tuto__steps .fa-store {
   color: #9356dc;
 }
-menu .tuto__steps .tuto__steps_card {
+.tuto_part .tuto__steps .tuto__steps_card {
   border-radius: 20px;
   padding: 3%;
   background-color: #f6f6f6;
@@ -119,7 +119,7 @@ menu .tuto__steps .tuto__steps_card {
   height: 45px;
   position: relative;
 }
-menu .tuto__steps .number {
+.tuto_part .tuto__steps .number {
   text-align: center;
   justify-content: center;
   background-color: #9356dc;
@@ -132,7 +132,7 @@ menu .tuto__steps .number {
   left: -15px;
   top: 5px;
 }
-menu .tuto__steps p {
+.tuto_part .tuto__steps p {
   font-size: larger;
   font-weight: 500;
   font-family: "Roboto", sans-serif;
