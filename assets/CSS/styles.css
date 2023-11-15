@@ -92,20 +92,25 @@ header .header__location p {
   align-items: flex-start;
 }
 
-.tuto__steps {
+menu {
+  align-self: center;
+  width: 100%;
+  padding: 0;
+}
+menu .tuto__steps {
   display: flex;
   flex-direction: column;
   width: 100%;
 }
-.tuto__steps .fa-solid {
+menu .tuto__steps .fa-solid {
   color: #7e7e7e;
   padding-left: 5%;
   padding-right: 5%;
 }
-.tuto__steps .fa-store {
+menu .tuto__steps .fa-store {
   color: #9356dc;
 }
-.tuto__steps ul {
+menu .tuto__steps ul {
   border-radius: 20px;
   padding: 3%;
   background-color: #f6f6f6;
@@ -113,7 +118,7 @@ header .header__location p {
   height: 45px;
   position: relative;
 }
-.tuto__steps .Number {
+menu .tuto__steps .Number {
   text-align: center;
   background-color: #9356dc;
   border-radius: 50%;
@@ -125,13 +130,16 @@ header .header__location p {
   left: -15px;
   top: 25px;
 }
-.tuto__steps p {
+menu .tuto__steps p {
   font-size: larger;
   font-weight: 500;
   font-family: "Roboto", sans-serif;
   position: relative;
   bottom: 5px;
   left: 5px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
 }
 
 main {
@@ -263,11 +271,40 @@ footer li a {
   cursor: pointer;
 }
 
-svg path:hover {
-  fill: url(#linear-hover);
-  stroke: none;
+svg:hover path {
+  animation: heart-fill 1.5s linear;
+  animation-fill-mode: forwards;
 }
 
+svg:not(:hover) path {
+  animation: heart-empty 1.5s linear;
+  animation-fill-mode: backwards;
+}
+
+@keyframes heart-fill {
+  0% {
+    opacity: 0;
+    stroke: none;
+    fill: url(#linear-hover);
+  }
+  100% {
+    opacity: 1;
+    fill: url(#linear-hover);
+    stroke: none;
+  }
+}
+@keyframes heart-empty {
+  0% {
+    opacity: 1;
+    fill: url(#linear-hover);
+    stroke: none;
+  }
+  100% {
+    opacity: 0;
+    stroke: none;
+    fill: url(#linear-hover);
+  }
+}
 @keyframes valid-in {
   from {
     transform: translateX(150%);
@@ -409,7 +446,7 @@ svg path:hover {
 .valid .valid_icon {
   color: #99e2d0;
   transform: scaleX(-1);
-  rotate: 40deg;
+  transform: rotate(40deg);
   font-family: Arial, Helvetica, sans-serif;
   font-size: 20px;
   background-color: #ffffff;
@@ -437,11 +474,40 @@ svg path:hover {
   cursor: pointer;
 }
 
-svg path:hover {
-  fill: url(#linear-hover);
-  stroke: none;
+svg:hover path {
+  animation: heart-fill 1.5s linear;
+  animation-fill-mode: forwards;
 }
 
+svg:not(:hover) path {
+  animation: heart-empty 1.5s linear;
+  animation-fill-mode: backwards;
+}
+
+@keyframes heart-fill {
+  0% {
+    opacity: 0;
+    stroke: none;
+    fill: url(#linear-hover);
+  }
+  100% {
+    opacity: 1;
+    fill: url(#linear-hover);
+    stroke: none;
+  }
+}
+@keyframes heart-empty {
+  0% {
+    opacity: 1;
+    fill: url(#linear-hover);
+    stroke: none;
+  }
+  100% {
+    opacity: 0;
+    stroke: none;
+    fill: url(#linear-hover);
+  }
+}
 @keyframes valid-in {
   from {
     transform: translateX(150%);

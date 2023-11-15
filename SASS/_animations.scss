@@ -15,12 +15,55 @@
   cursor: pointer;
 }
 
-svg {
-  path:hover {
+svg:hover {
+  path {
+    animation: heart-fill 1.5s linear;
+    animation-fill-mode: forwards;
+  }
+}
+svg:not(:hover) {
+  path {
+    // fill: url(#linear-hover);
+    animation: heart-empty 1.5s linear;
+    animation-fill-mode: backwards;
+    // animation-play-state: paused;
+  }
+}
+
+//   path:not(:hover) {
+//     // fill: url(#linear-hover);
+//     animation: heart-empty 1.5s linear;
+//     animation-fill-mode: backwards;
+//     // animation-play-state: paused;
+//   }
+// }
+
+@keyframes heart-fill {
+  0% {
+    opacity: 0;
+    stroke: none;
+    fill: url(#linear-hover);
+  }
+  100% {
+    opacity: 1;
     fill: url(#linear-hover);
     stroke: none;
   }
 }
+
+@keyframes heart-empty {
+  0% {
+    opacity: 1;
+    fill: url(#linear-hover);
+    stroke: none;
+  }
+  100% {
+    opacity: 0;
+    stroke: none;
+    fill: url(#linear-hover);
+  }
+}
+
 // VALID
 @keyframes valid-in {
   from {

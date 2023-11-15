@@ -61,7 +61,7 @@ Tertiaire : #99E2D0
 - [x] Au survol, la couleur de fond des boutons principaux devra légèrement s’éclaircir. L’ombre portée devra être plus visible.
 - [x] Le bouton "J’aime" en forme de cœur : au clic, il devra se remplir progressivement. Pour cette première version, l’effet peut apparaître au survol sur desktop au lieu du clic.
 
-**Main pag**
+**Main page**
 
 - [ ] Un “loader”, design libre mais respect charte grpahique du site.
       Temps d'affichage : 1 à 3 secs.

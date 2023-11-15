@@ -6,6 +6,7 @@
     opacity: 1;
     display: flex;
     animation: valid-in 0.3s forwards;
+    // &carte { just between}
   }
 }
 
@@ -32,7 +33,7 @@
   .valid_icon {
     color: $tertiary-color;
     transform: scaleX(-1);
-    rotate: 40deg;
+    transform: rotate(40deg);
     font-family: Arial, Helvetica, sans-serif;
     font-size: 20px;
     background-color: #ffffff;
