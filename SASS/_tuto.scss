@@ -26,8 +26,9 @@ menu {
       height: 45px;
       position: relative;
     }
-    .Number {
+    .number {
       text-align: center;
+      justify-content: center;
       background-color: $main-color;
       border-radius: 50%;
       color: #eaeaea;
@@ -36,7 +37,7 @@ menu {
       font-size: larger;
       position: absolute;
       left: -15px;
-      top: 25px;
+      top: 5px;
     }
 
     p {

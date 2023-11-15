@@ -118,8 +118,9 @@ menu .tuto__steps ul {
   height: 45px;
   position: relative;
 }
-menu .tuto__steps .Number {
+menu .tuto__steps .number {
   text-align: center;
+  justify-content: center;
   background-color: #9356dc;
   border-radius: 50%;
   color: #eaeaea;
@@ -128,7 +129,7 @@ menu .tuto__steps .Number {
   font-size: larger;
   position: absolute;
   left: -15px;
-  top: 25px;
+  top: 5px;
 }
 menu .tuto__steps p {
   font-size: larger;
