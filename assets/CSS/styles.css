@@ -279,40 +279,18 @@ footer ul a {
   cursor: pointer;
 }
 
-svg:hover path {
-  animation: heart-fill 1.5s linear;
-  animation-fill-mode: forwards;
+svg path {
+  fill: url(#linear-hover);
+  fill-opacity: 0;
+  stroke: black;
+  stroke-opacity: 1;
+  transition: fill-opacity 0.5s linear, stroke-opacity 0.5s linear;
+}
+svg path:hover {
+  fill-opacity: 1;
+  stroke-opacity: 0;
 }
 
-svg:not(:hover) path {
-  animation: heart-empty 1.5s linear;
-  animation-fill-mode: backwards;
-}
-
-@keyframes heart-fill {
-  0% {
-    opacity: 0;
-    stroke: none;
-    fill: url(#linear-hover);
-  }
-  100% {
-    opacity: 1;
-    fill: url(#linear-hover);
-    stroke: none;
-  }
-}
-@keyframes heart-empty {
-  0% {
-    opacity: 1;
-    fill: url(#linear-hover);
-    stroke: none;
-  }
-  100% {
-    opacity: 0;
-    stroke: none;
-    fill: url(#linear-hover);
-  }
-}
 @keyframes valid-in {
   from {
     transform: translateX(150%);
@@ -387,7 +365,7 @@ svg:not(:hover) path {
   align-self: flex-end;
   font-weight: 700;
   font-size: 15px;
-  padding-right: 5%;
+  padding-right: 5px;
 }
 .menu_carte .menu_carte_content .menu_carte_content_desc {
   overflow: hidden;
@@ -491,40 +469,18 @@ svg:not(:hover) path {
   cursor: pointer;
 }
 
-svg:hover path {
-  animation: heart-fill 1.5s linear;
-  animation-fill-mode: forwards;
+svg path {
+  fill: url(#linear-hover);
+  fill-opacity: 0;
+  stroke: black;
+  stroke-opacity: 1;
+  transition: fill-opacity 0.5s linear, stroke-opacity 0.5s linear;
+}
+svg path:hover {
+  fill-opacity: 1;
+  stroke-opacity: 0;
 }
 
-svg:not(:hover) path {
-  animation: heart-empty 1.5s linear;
-  animation-fill-mode: backwards;
-}
-
-@keyframes heart-fill {
-  0% {
-    opacity: 0;
-    stroke: none;
-    fill: url(#linear-hover);
-  }
-  100% {
-    opacity: 1;
-    fill: url(#linear-hover);
-    stroke: none;
-  }
-}
-@keyframes heart-empty {
-  0% {
-    opacity: 1;
-    fill: url(#linear-hover);
-    stroke: none;
-  }
-  100% {
-    opacity: 0;
-    stroke: none;
-    fill: url(#linear-hover);
-  }
-}
 @keyframes valid-in {
   from {
     transform: translateX(150%);
