@@ -373,14 +373,29 @@ svg:not(:hover) path {
   padding: 0%;
   height: 4.5em;
   display: flex;
-  justify-content: space-between;
   align-items: center;
 }
 .menu_carte .menu_carte_content {
-  box-sizing: border-box;
+  display: flex;
+  justify-content: space-between;
   overflow: hidden;
-  padding-left: 3%;
-  line-height: 20px;
+  padding: 3%;
+  width: 100%;
+}
+.menu_carte .menu_carte_content .prix {
+  display: flex;
+  align-self: flex-end;
+  font-weight: 700;
+  font-size: 15px;
+  padding-right: 5%;
+}
+.menu_carte .menu_carte_content .menu_carte_content_desc {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  display: flex;
+  justify-items: flex-start;
+  flex-direction: column;
 }
 .menu_carte .menu_carte_content .menu_carte_content_title {
   margin: 0;
@@ -396,13 +411,6 @@ svg:not(:hover) path {
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
-}
-.menu_carte .prix {
-  display: flex;
-  align-self: flex-end;
-  font-weight: 700;
-  font-size: 15px;
-  padding-right: 5%;
 }
 
 .commander_part {

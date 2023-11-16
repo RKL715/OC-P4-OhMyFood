@@ -37,12 +37,27 @@
 .menu_carte {
   position: relative;
   cursor: pointer;
+
   @include carte_menu;
   .menu_carte_content {
-    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
     overflow: hidden;
-    padding-left: 3%;
-    line-height: 20px;
+    padding: 3%;
+    width: 100%;
+    .prix {
+      display: flex;
+      align-self: flex-end;
+      font-weight: 700;
+      font-size: 15px;
+      padding-right: 5%;
+    }
+    .menu_carte_content_desc {
+      @include hidden;
+      display: flex;
+      justify-items: flex-start;
+      flex-direction: column;
+    }
     .menu_carte_content_title {
       margin: 0;
       // Font
@@ -50,24 +65,13 @@
       font-weight: 500;
       font-family: $text-font;
       // Hide
-      overflow: hidden;
-      text-overflow: ellipsis;
-      white-space: nowrap;
+      @include hidden;
     }
     p {
       margin-bottom: 0;
       // Hide
-      overflow: hidden;
-      text-overflow: ellipsis;
-      white-space: nowrap;
+      @include hidden;
     }
-  }
-  .prix {
-    display: flex;
-    align-self: flex-end;
-    font-weight: 700;
-    font-size: 15px;
-    padding-right: 5%;
   }
 }
 
