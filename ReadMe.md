@@ -1,7 +1,5 @@
 **A améliorer :**
 
-- checkmark animation
-
 # OhMyFood
 
 ## Charte graphique :
@@ -72,7 +70,7 @@ Tertiaire : #99E2D0
 
 - [x] Apparition des plats progressive, avec décalage dans le temps.
       Soit 1 par 1. Soit par groupe (“Entrée”, “Plat” et “Dessert”).
-- [ ] Lors du clic d'ajout d'un plat à la commande, apparation d'une petite coche à droite du plat.
+- [x] Lors du clic d'ajout d'un plat à la commande, apparation d'une petite coche à droite du plat.
       Cette coche devra coulisser de la droite vers la gauche.
       Pour cette première version, l’effet peut apparaître au survol sur desktop au lieu du clic.
       Si l’intitulé du plat est trop long, il devra être rogné avec des points de suspension.

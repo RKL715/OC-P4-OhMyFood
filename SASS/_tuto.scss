@@ -1,3 +1,5 @@
+@use '_responsive';
+
 @import '_variables';
 @import '_mixins';
 
@@ -24,8 +26,7 @@
     }
     .tuto__steps_card {
       @include small_card;
-      height: 45px;
-
+      height: 72px;
       position: relative;
     }
     .number {
@@ -39,7 +40,7 @@
       font-size: larger;
       position: absolute;
       left: -15px;
-      top: 5px;
+      top: 15px;
     }
 
     p {
@@ -47,9 +48,10 @@
       font-weight: 500;
       font-family: $text-font;
       position: relative;
-      bottom: 5px;
-      left: 5px;
+      top: 5px;
+      left: 15px;
       display: flex;
+      align-items: center;
       flex-direction: row;
       flex-wrap: nowrap;
     }
