@@ -1,0 +1,21 @@
+@media screen and (min-width: 1400px) {
+  .restaurant_body {
+    background-color: white;
+  }
+  .page_restaurant_header {
+    justify-content: left;
+    gap: 50%;
+    padding-left: 1%;
+  }
+  .page_restaurant_menu {
+    width: 50%;
+    margin-left: 25%;
+    margin-right: 25%;
+    padding-left: 5%;
+    padding-right: 5%;
+
+    .restaurant_name {
+      justify-content: center;
+    }
+  }
+}

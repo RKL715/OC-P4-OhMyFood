@@ -87,63 +87,6 @@ header .header__location p {
   opacity: 85%;
 }
 
-@media screen and (min-width: 1400px) {
-  .introduction h2 {
-    margin-top: 0;
-    margin-bottom: 0;
-    font-size: 40px;
-  }
-  .fonction {
-    margin-left: 7rem;
-  }
-  .tuto_part .tuto__steps {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    gap: 3%;
-  }
-  .tuto_part .tuto__steps .tuto__steps_card {
-    width: 400px;
-    padding: 0%;
-  }
-  .tuto_part .tuto__steps .number {
-    top: 5px;
-  }
-  main h2 {
-    margin-left: 7rem;
-  }
-  .restaurants {
-    margin-left: 100px;
-    margin-right: 100px;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-  }
-  .restaurants .restaurants__card {
-    width: 40em;
-    height: auto;
-  }
-}
-footer {
-  display: flex;
-  flex-direction: row-reverse;
-  padding-right: 5%;
-  padding-top: 20px;
-}
-
-footer h4 {
-  padding-top: 0;
-  margin-top: 16px;
-}
-
-footer ul {
-  padding-right: 5em;
-  display: flex;
-  flex-direction: row;
-  gap: 3%;
-  white-space: nowrap;
-  width: 40%;
-}
-
 .tuto {
   background-color: white;
   align-items: flex-start;
@@ -594,24 +537,44 @@ svg path:hover {
     width: 40em;
     height: auto;
   }
+  footer {
+    display: flex;
+    flex-direction: row-reverse;
+    padding-right: 5%;
+    padding-top: 20px;
+  }
+  footer h4 {
+    padding-top: 0;
+    margin-top: 16px;
+  }
+  footer ul {
+    padding-right: 5em;
+    display: flex;
+    flex-direction: row;
+    gap: 3%;
+    white-space: nowrap;
+    width: 40%;
+  }
 }
-footer {
-  display: flex;
-  flex-direction: row-reverse;
-  padding-right: 5%;
-  padding-top: 20px;
-}
-footer h4 {
-  padding-top: 0;
-  margin-top: 16px;
-}
-footer ul {
-  padding-right: 5em;
-  display: flex;
-  flex-direction: row;
-  gap: 3%;
-  white-space: nowrap;
-  width: 40%;
+@media screen and (min-width: 1400px) {
+  .restaurant_body {
+    background-color: white;
+  }
+  .page_restaurant_header {
+    justify-content: left;
+    gap: 50%;
+    padding-left: 1%;
+  }
+  .page_restaurant_menu {
+    width: 50%;
+    margin-left: 25%;
+    margin-right: 25%;
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+  .page_restaurant_menu .restaurant_name {
+    justify-content: center;
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */

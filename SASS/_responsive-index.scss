@@ -1,7 +1,6 @@
 @import '_variables';
 @import '_mixins';
 
-// INDEX
 @media screen and (min-width: 1400px) {
   //   top
   .introduction {
@@ -47,25 +46,25 @@
       height: auto;
     }
   }
-}
 
-// FOOTER
+  // FOOTER
 
-footer {
-  display: flex;
-  flex-direction: row-reverse;
-  padding-right: 5%;
-  padding-top: 20px;
-  h4 {
-    padding-top: 0;
-    margin-top: 16px;
-  }
-  ul {
-    padding-right: 5em;
+  footer {
     display: flex;
-    flex-direction: row;
-    gap: 3%;
-    white-space: nowrap;
-    width: 40%;
+    flex-direction: row-reverse;
+    padding-right: 5%;
+    padding-top: 20px;
+    h4 {
+      padding-top: 0;
+      margin-top: 16px;
+    }
+    ul {
+      padding-right: 5em;
+      display: flex;
+      flex-direction: row;
+      gap: 3%;
+      white-space: nowrap;
+      width: 40%;
+    }
   }
 }
