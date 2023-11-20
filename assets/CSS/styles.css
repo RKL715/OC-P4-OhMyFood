@@ -94,7 +94,7 @@ header .header__location p {
     font-size: 40px;
   }
   .fonction {
-    margin-left: 16%;
+    margin-left: 7rem;
   }
   .tuto_part .tuto__steps {
     display: flex;
@@ -109,7 +109,41 @@ header .header__location p {
   .tuto_part .tuto__steps .number {
     top: 5px;
   }
+  main h2 {
+    margin-left: 7rem;
+  }
+  .restaurants {
+    margin-left: 100px;
+    margin-right: 100px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  .restaurants .restaurants__card {
+    width: 40em;
+    height: auto;
+  }
 }
+footer {
+  display: flex;
+  flex-direction: row-reverse;
+  padding-right: 5%;
+  padding-top: 20px;
+}
+
+footer h4 {
+  padding-top: 0;
+  margin-top: 16px;
+}
+
+footer ul {
+  padding-right: 5em;
+  display: flex;
+  flex-direction: row;
+  gap: 3%;
+  white-space: nowrap;
+  width: 40%;
+}
+
 .tuto {
   background-color: white;
   align-items: flex-start;
@@ -532,7 +566,7 @@ svg path:hover {
     font-size: 40px;
   }
   .fonction {
-    margin-left: 16%;
+    margin-left: 7rem;
   }
   .tuto_part .tuto__steps {
     display: flex;
@@ -547,6 +581,37 @@ svg path:hover {
   .tuto_part .tuto__steps .number {
     top: 5px;
   }
+  main h2 {
+    margin-left: 7rem;
+  }
+  .restaurants {
+    margin-left: 100px;
+    margin-right: 100px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  .restaurants .restaurants__card {
+    width: 40em;
+    height: auto;
+  }
+}
+footer {
+  display: flex;
+  flex-direction: row-reverse;
+  padding-right: 5%;
+  padding-top: 20px;
+}
+footer h4 {
+  padding-top: 0;
+  margin-top: 16px;
+}
+footer ul {
+  padding-right: 5em;
+  display: flex;
+  flex-direction: row;
+  gap: 3%;
+  white-space: nowrap;
+  width: 40%;
 }
 
 /*# sourceMappingURL=styles.css.map */
