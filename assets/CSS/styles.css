@@ -204,7 +204,6 @@ footer h4 {
 }
 footer ul {
   list-style: none;
-  padding-bottom: 5%;
   line-height: 1.5;
   margin-bottom: 0%;
 }
@@ -517,6 +516,7 @@ svg path:hover {
 }
 
 .loader {
+  box-sizing: border-box;
   margin: 0;
   padding: 0;
   width: 100%;
@@ -525,7 +525,7 @@ svg path:hover {
   justify-content: center;
   align-items: center;
   position: fixed;
-  animation: loader 3s linear;
+  animation: loader 3s linear forwards;
 }
 .loader .loader-page {
   background: linear-gradient(#977fb3, #d7a1c8, #adcec6);
@@ -534,8 +534,6 @@ svg path:hover {
   width: 15em;
   height: 20em;
   position: relative;
-  overflow: hidden;
-  z-index: 1;
   filter: drop-shadow(0px 0px 1px #8d847f);
   animation: l3 1s infinite alternate linear;
 }
@@ -609,7 +607,7 @@ svg path:hover {
 }
 @keyframes loader {
   0% {
-    display: block;
+    display: flex;
   }
   100% {
     display: none;
@@ -655,6 +653,7 @@ svg path:hover {
     flex-direction: row-reverse;
     padding-right: 5%;
     padding-top: 20px;
+    height: 100px;
   }
   footer h4 {
     padding-top: 0;
