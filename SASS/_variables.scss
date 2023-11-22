@@ -8,3 +8,8 @@ $background-dark: #eaeaea;
 $background-light: #f6f6f6;
 $nouveau-text: #008766;
 $footer-background: #353535;
+
+$desaturated-main-color: desaturate($main-color, 40%);
+$desaturated-secondary-color: desaturate($secondary-color, 60%);
+$desaturated-tertiary-color: desaturate($tertiary-color, 30%);
+$smooth-color: mix($desaturated-main-color, $desaturated-secondary-color, 50%);
