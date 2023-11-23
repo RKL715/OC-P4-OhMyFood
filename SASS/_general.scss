@@ -2,8 +2,9 @@
 
 body {
   font: 3rem;
-  margin: 0%;
+  margin: 0;
   background-color: $background-light;
+  overflow-x: hidden;
 }
 
 section {

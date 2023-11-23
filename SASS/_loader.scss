@@ -1,0 +1,132 @@
+@import '_variables';
+@import '_mixins';
+
+// PAGE CONTENT
+@keyframes vanish {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.container {
+  margin: 0;
+  opacity: 0;
+  animation: vanish 3s linear forwards;
+  animation-delay: 3s;
+  max-width: 100%;
+}
+// LOADER
+.loader {
+  box-sizing: border-box;
+  overflow-x: hidden;
+  margin: 0;
+  padding: 0;
+  max-width: 100%;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  animation: loader 6s linear forwards;
+
+  .loader-page {
+    background: linear-gradient(
+      $desaturated-main-color,
+      $desaturated-secondary-color,
+      $desaturated-tertiary-color
+    );
+    border-top: 10px dotted $smooth-color;
+    border-radius: 10px;
+    width: 15em;
+    height: 20em;
+    position: relative;
+    filter: drop-shadow(0px 0px 1px #8d847f);
+    animation: l3 1s infinite alternate linear;
+
+    .epd {
+      p {
+        color: #333333;
+        font-family: $title-font;
+        opacity: 0;
+        text-align: center;
+        line-height: 3;
+        animation: text-appear 3s ease infinite;
+      }
+    }
+    p:nth-of-type(2) {
+      opacity: 0;
+      animation: text-appear-right 3s ease infinite;
+      animation-delay: 0.1s;
+    }
+    p:nth-of-type(3) {
+      opacity: 0;
+      animation: text-appear 3s ease infinite;
+      animation-delay: 0.3s;
+    }
+  }
+  .omf {
+    position: absolute;
+    top: 0em;
+    left: 6em;
+    p {
+      color: #333333;
+      font-family: $title-font;
+      opacity: 0;
+      text-align: center;
+      line-height: 5;
+      animation: text-appear 3s ease infinite;
+      animation-delay: 2s;
+    }
+    p:nth-of-type(2) {
+      opacity: 0;
+      animation: text-appear-right 3s ease infinite;
+      animation-delay: 2.2s;
+    }
+    p:nth-of-type(3) {
+      opacity: 0;
+      animation: text-appear 3s ease infinite;
+      animation-delay: 2.4s;
+    }
+  }
+}
+
+@keyframes text-appear {
+  0%,
+  100% {
+    opacity: 0;
+    transform: translate(-100px);
+  }
+  50% {
+    opacity: 1;
+    transform: translate(0px);
+  }
+}
+
+@keyframes text-appear-right {
+  0%,
+  100% {
+    opacity: 0;
+    transform: translate(100px);
+  }
+  50% {
+    opacity: 1;
+    transform: translate(0px);
+  }
+}
+@keyframes l3 {
+  100% {
+    filter: drop-shadow(0px 0px 20px #8d847f);
+  }
+}
+
+@keyframes loader {
+  0% {
+    display: flex;
+  }
+  100% {
+    display: none;
+  }
+}

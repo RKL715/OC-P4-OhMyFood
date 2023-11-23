@@ -1,17 +1,21 @@
-OhMyFood
+**A améliorer :**
 
-Charte graphique :
+# OhMyFood
 
-Polices
+## Charte graphique :
+
+### Polices
+
 Logo et titres : Shrikhand
 Texte : Roboto
 
-Consignes :
+### Couleurs
 
-Couleurs
 Primaire : #9356DC
 Secondaire : #FF79DA
 Tertiaire : #99E2D0
+
+## Consignes :
 
 - SASS
 - Pas de JS
@@ -25,49 +29,53 @@ Tertiaire : #99E2D0
 - W3C ok
 - Firefox / Chrome ok
 
-CONTENUS ATTENDUS :
+## CONTENUS ATTENDUS :
 
-            Main page
+**Main page**
 
-Affichage de la localisation des restaurants.
-Une courte présentation de l’entreprise.
-Une section contenant les 4 menus sous forme de cartes. Au clic sur la carte, l’utilisateur est redirigé vers la page du menu.
+- [x] Affichage de la localisation des restaurants.
+- [x] Une courte présentation de l’entreprise.
+- [x] Une section contenant les 4 menus sous forme de cartes. Au clic sur la carte, l’utilisateur est redirigé vers la page du menu.
 
-            Menus (x4)
+**Menus (x4)**
 
-Menu des restaurants
+- [ ] Menu des restaurants
 
-            Footer
+**Footer**
 
-Identique à toutes les pages
-Lien contact fonctionnel, redirection vers mail.
+- [x] Identique à toutes les pages
+- [x] Lien contact fonctionnel, redirection vers mail.
 
-            Header
+**Header**
 
-Sur toutes les pages
-Sur la main page, il contient le logo
-Sur les menus, il contient en plus un bouton retour vers main page
+- [x] Sur toutes les pages
+- [x] Sur la main page, il contient le logo
+- [x] Sur les menus, il contient en plus un bouton retour vers main page
 
-ANIMATIONS :
+## ANIMATIONS :
 
-            Boutons
+**Boutons**
 
-Au survol, la couleur de fond des boutons principaux devra légèrement s’éclaircir. L’ombre portée devra également être plus visible.
-Le bouton "J’aime" en forme de cœur : au clic, il devra se remplir progressivement. Pour cette première version, l’effet peut apparaître au
-survol sur desktop au lieu du clic.
+- [x] Au survol, la couleur de fond des boutons principaux devra légèrement s’éclaircir. L’ombre portée devra être plus visible.
+- [x] Le bouton "J’aime" en forme de cœur : au clic, il devra se remplir progressivement. Pour cette première version, l’effet peut apparaître au survol sur desktop au lieu du clic.
 
-            Main page
+**Main page**
 
-Un “loader”, design libre mais respect charte grpahique du site.
-Temps d'affichage : 1 à 3 secs.
-Où : Main page, couverture intégrale de l'écran.
-Comment : Animation CSS uniquement.
+- [ ] Un “loader”, design libre mais respect charte grpahique du site.
+      Temps d'affichage : 1 à 3 secs.
+      Où : Main page, couverture intégrale de l'écran.
+      Comment : Animation CSS uniquement.
 
-         Menus
+**Menus**
 
-Apparition des plats progressive, avec décalage dans le temps.
-Soit 1 par 1. Soit par groupe (“Entrée”, “Plat” et “Dessert”).
-Lors du clic d'ajout d'un plat à la commande, apparation d'une petite coche à droite du plat.
-Cette coche devra coulisser de la droite vers la gauche.
-Pour cette première version, l’effet peut apparaître au survol sur desktop au lieu du clic.
-Si l’intitulé du plat est trop long, il devra être rogné avec des points de suspension.
+- [x] Apparition des plats progressive, avec décalage dans le temps.
+      Soit 1 par 1. Soit par groupe (“Entrée”, “Plat” et “Dessert”).
+- [x] Lors du clic d'ajout d'un plat à la commande, apparation d'une petite coche à droite du plat.
+      Cette coche devra coulisser de la droite vers la gauche.
+      Pour cette première version, l’effet peut apparaître au survol sur desktop au lieu du clic.
+      Si l’intitulé du plat est trop long, il devra être rogné avec des points de suspension.
+
+**Responsive**
+
+- [x] Mobile first
+- [ ] Format tab & desktop

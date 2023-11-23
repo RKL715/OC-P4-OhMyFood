@@ -1,0 +1,77 @@
+@import '_variables';
+@import '_mixins';
+
+@media screen and (min-width: 1400px) {
+  //   top
+  .introduction {
+    h2 {
+      margin-top: 0;
+      margin-bottom: 0;
+      font-size: 40px;
+    }
+  }
+  // tuto
+  .tuto {
+    padding-left: 10%;
+    padding-right: 10%;
+  }
+  .tuto_part {
+    display: flex;
+    flex-direction: row;
+    .tuto__steps {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      gap: 3%;
+      .tuto__steps_card {
+        width: 400px;
+        padding: 0%;
+      }
+      .number {
+        top: 5px;
+      }
+    }
+  }
+
+  // resto
+  main {
+    h2 {
+      padding-left: 10%;
+    }
+  }
+  .restaurants {
+    padding-left: 180px;
+    padding-right: 180px;
+    margin-right: 5%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 100px;
+    grid-row-gap: 50px;
+    .restaurants__card {
+      width: 100%;
+      height: auto;
+    }
+  }
+
+  // FOOTER
+
+  footer {
+    display: flex;
+    flex-direction: row-reverse;
+    padding-right: 5%;
+    padding-top: 20px;
+    height: 100px;
+    h4 {
+      padding-top: 0;
+      margin-top: 16px;
+    }
+    ul {
+      padding-right: 5em;
+      display: flex;
+      flex-direction: row;
+      gap: 3%;
+      white-space: nowrap;
+      width: 40%;
+    }
+  }
+}

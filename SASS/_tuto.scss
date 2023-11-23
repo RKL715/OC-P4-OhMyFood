@@ -5,44 +5,53 @@
   background-color: white;
   align-items: flex-start;
 }
-
-.tuto__steps {
-  display: flex;
-  flex-direction: column;
+.tuto_part {
+  align-self: center;
   width: 100%;
+  padding: 0;
+  .tuto__steps {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 15px;
+    .fa-solid {
+      color: #7e7e7e;
+      padding-left: 5%;
+      padding-right: 5%;
+    }
+    .fa-store {
+      color: $main-color;
+    }
+    .tuto__steps_card {
+      @include small_card;
+      height: 72px;
+      position: relative;
+    }
+    .number {
+      text-align: center;
+      justify-content: center;
+      background-color: $main-color;
+      border-radius: 50%;
+      color: #eaeaea;
+      height: 25px;
+      width: 25px;
+      font-size: larger;
+      position: absolute;
+      left: -15px;
+      top: 15px;
+    }
 
-  .fa-solid {
-    color: #7e7e7e;
-    padding-left: 5%;
-    padding-right: 5%;
-  }
-  .fa-store {
-    color: $main-color;
-  }
-  ul {
-    @include small_card;
-    height: 45px;
-    position: relative;
-  }
-  .Number {
-    text-align: center;
-    background-color: $main-color;
-    border-radius: 50%;
-    color: #eaeaea;
-    height: 25px;
-    width: 25px;
-    font-size: larger;
-    position: absolute;
-    left: -15px;
-    top: 25px;
-  }
-
-  p {
-    font-size: larger;
-    font-weight: 500;
-    font-family: $text-font;
-    position: relative;
-    bottom: 5px;
-    left: 5px;
+    p {
+      font-size: larger;
+      font-weight: 500;
+      font-family: $text-font;
+      position: relative;
+      top: 5px;
+      left: 15px;
+      display: flex;
+      align-items: center;
+      flex-direction: row;
+      flex-wrap: nowrap;
+    }
   }
 }

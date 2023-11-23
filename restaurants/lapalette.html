@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html lang="fr">
 
 <head>
@@ -24,11 +25,27 @@
       <h1>ohmyfood</h1>
    </header>
 
-   <section class="page_restaurant_top"><img src="../assets/images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg"
-         alt="Table avec assiette de saumon"></section>
+   <div class="page_restaurant_top"><img src="../assets/images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg"
+         alt="Table avec assiette de saumon"></div>
 
    <main class="page_restaurant_menu">
-      <h4 class="restaurant_name">La palette du goût <i class="fa-regular fa-heart"></i></h4>
+      <h4 class="restaurant_name">La palette du goût
+         <!-- heart SVG -->
+         <button type="button" class="heart">
+            <svg width="23" height="27" viewBox="0 0 23 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+               <path
+                  d="M20.3647 1.43666C18.01 -0.752399 14.5081 -0.358649 12.3468 2.07416L11.5003 3.02573L10.6538 2.07416C8.49677 -0.358649 4.99052 -0.752399 2.63583 1.43666C-0.0626076 3.94916 -0.204405 8.45854 2.21044 11.182L10.5249 20.5476C11.062 21.1523 11.9343 21.1523 12.4714 20.5476L20.7858 11.182C23.205 8.45854 23.0632 3.94916 20.3647 1.43666Z"
+                  stroke="#101010" fill=transparent />
+               <defs>
+                  <linearGradient id="linear-hover" x1="11.5" y1="-5.45937" x2="3.93419" y2="27.993"
+                     gradientUnits="userSpaceOnUse">
+                     <stop offset='O%' stop-color="#9356DC" />
+                     <stop offset="100%" stop-color="#FF79DA" />
+                  </linearGradient>
+               </defs>
+            </svg>
+         </button>
+      </h4>
       <!-- ENTREES -->
       <div class="menu_carte_entrees">
          <article class="menu_type">
@@ -36,10 +53,12 @@
             <!-- ENTREE 1 -->
             <div class="menu_carte">
                <div class="menu_carte_content">
-                  <h6 class="menu_carte_content_title">Fricassée d'escargots</h6>
-                  <p class="menu_carte_content_text">Au piment d'Espelette</p>
+                  <div class="menu_carte_content_desc">
+                     <h6 class="menu_carte_content_title">Fricassée d'escargots</h6>
+                     <p class="menu_carte_content_text">Au piment d'Espelette</p>
+                  </div>
+                  <p class="prix">25€</p>
                </div>
-               <p class="prix">25€</p>
                <div class="valid">
                   <button class="valid_icon">L</button>
                </div>
@@ -47,10 +66,12 @@
             <!-- ENTREE 2 -->
             <div class="menu_carte">
                <div class="menu_carte_content">
-                  <h6 class="menu_carte_content_title">Foie gras de canard mi-cuit</h6>
-                  <p class="menu_carte_content_text">Et ses copeaux de truffe noire</p>
+                  <div class="menu_carte_content_desc">
+                     <h6 class="menu_carte_content_title">Foie gras de canard mi-cuit</h6>
+                     <p class="menu_carte_content_text">Et ses copeaux de truffe noire</p>
+                  </div>
+                  <p class="prix">35€</p>
                </div>
-               <p class="prix">35€</p>
                <div class="valid">
                   <button class="valid_icon">L</button>
                </div>
@@ -58,10 +79,12 @@
             <!-- ENTREE 3 -->
             <div class="menu_carte">
                <div class="menu_carte_content">
-                  <h6 class="menu_carte_content_title">Œuf au plat</h6>
-                  <p class="menu_carte_content_text">Assaisonné à la truffe sur lit de caviar</p>
+                  <div class="menu_carte_content_desc">
+                     <h6 class="menu_carte_content_title">Œuf au plat</h6>
+                     <p class="menu_carte_content_text">Assaisonné à la truffe sur lit de caviar</p>
+                  </div>
+                  <p class="prix">20€</p>
                </div>
-               <p class="prix">20€</p>
                <div class="valid">
                   <button class="valid_icon">L</button>
                </div>
@@ -75,10 +98,12 @@
             <!-- PLAT 1 -->
             <div class="menu_carte">
                <div class="menu_carte_content">
-                  <h6 class="menu_carte_content_title">Filet de bœuf aux herbes</h6>
-                  <p class="menu_carte_content_text">Accompagné de sa ribambelle de légumes</p>
+                  <div class="menu_carte_content_desc">
+                     <h6 class="menu_carte_content_title">Filet de bœuf aux herbes</h6>
+                     <p class="menu_carte_content_text">Accompagné de sa ribambelle de légumes</p>
+                  </div>
+                  <p class="prix">40€</p>
                </div>
-               <p class="prix">40€</p>
                <div class="valid">
                   <button class="valid_icon">L</button>
                </div>
@@ -86,10 +111,13 @@
             <!-- PLAT 2 -->
             <div class="menu_carte">
                <div class="menu_carte_content">
-                  <h6 class="menu_carte_content_title">Parmentier de queue de bœuf</h6>
-                  <p class="menu_carte_content_text">À la truffe noire sur sa purée de panais</p>
+                  <div class="menu_carte_content_desc">
+                     <h6 class="menu_carte_content_title">Parmentier de queue de bœuf</h6>
+                     <p class="menu_carte_content_text">À la truffe noire sur sa purée de panais</p>
+                  </div>
+                  <p class="prix">35€</p>
                </div>
-               <p class="prix">35€</p>
+
                <div class="valid">
                   <button class="valid_icon">L</button>
                </div>
@@ -97,10 +125,12 @@
             <!-- PLAT 3 -->
             <div class="menu_carte">
                <div class="menu_carte_content">
-                  <h6 class="menu_carte_content_title">Filet de turbot</h6>
-                  <p class="menu_carte_content_text">Aux agrumes</p>
+                  <div class="menu_carte_content_desc">
+                     <h6 class="menu_carte_content_title">Filet de turbot</h6>
+                     <p class="menu_carte_content_text">Aux agrumes</p>
+                  </div>
+                  <p class="prix">44€</p>
                </div>
-               <p class="prix">44€</p>
                <div class="valid">
                   <button class="valid_icon">L</button>
                </div>
@@ -114,10 +144,12 @@
             <!-- DESSERT 1 -->
             <div class="menu_carte">
                <div class="menu_carte_content">
-                  <h6 class="menu_carte_content_title">Paris-Brest</h6>
-                  <p class="menu_carte_content_text">Revisité</p>
+                  <div class="menu_carte_content_desc">
+                     <h6 class="menu_carte_content_title">Paris-Brest</h6>
+                     <p class="menu_carte_content_text">Revisité</p>
+                  </div>
+                  <p class="prix">18€</p>
                </div>
-               <p class="prix">18€</p>
                <div class="valid">
                   <button class="valid_icon">L</button>
                </div>
@@ -125,12 +157,14 @@
             <!-- DESSERT 2 -->
             <div class="menu_carte">
                <div class="menu_carte_content">
-                  <h6 class="menu_carte_content_title">Macaron au chocolat d'exception
-                  </h6>
-                  <p class="menu_carte_content_text">Et glace à la vanille de Madagascar
-                  </p>
+                  <div class="menu_carte_content_desc">
+                     <h6 class="menu_carte_content_title">Macaron au chocolat d'exception
+                     </h6>
+                     <p class="menu_carte_content_text">Et glace à la vanille de Madagascar
+                     </p>
+                  </div>
+                  <p class="prix">22€</p>
                </div>
-               <p class="prix">22€</p>
                <div class="valid">
                   <button class="valid_icon">L</button>
                </div>
@@ -138,12 +172,14 @@
             <!-- DESSERT 3 -->
             <div class="menu_carte">
                <div class="menu_carte_content">
-                  <h6 class="menu_carte_content_title">Mousse au chocolat
-                  </h6>
-                  <p class="menu_carte_content_text">Au piment d'Espelette et à la truffe noire
-                  </p>
+                  <div class="menu_carte_content_desc">
+                     <h6 class="menu_carte_content_title">Mousse au chocolat
+                     </h6>
+                     <p class="menu_carte_content_text">Au piment d'Espelette et à la truffe noire
+                     </p>
+                  </div>
+                  <p class="prix">23€</p>
                </div>
-               <p class="prix">23€</p>
                <div class="valid">
                   <button class="valid_icon">L</button>
                </div>
@@ -159,20 +195,12 @@
    <!--D-FOOTER-->
    <footer>
       <h4>ohmyfood</h4>
-      <li class="footer">
-         <a href="#">
-            <ul><i class="fa-solid fa-utensils"></i> Proposer un restaurant</ul>
-         </a>
-         <a href="#">
-            <ul><i class="fa-solid fa-handshake"></i> Devenir partenaire</ul>
-         </a>
-         <a href="#">
-            <ul>Mentions légales</ul>
-         </a>
-         <a href="#">
-            <ul>Contact</ul>
-         </a>
-      </li>
+      <ul class="footer">
+         <li><a href="#"><i class="fa-solid fa-utensils"></i> Proposer un restaurant</a></li>
+         <li><a href="#"><i class="fa-solid fa-handshake"></i> Devenir partenaire</a></li>
+         <li><a href="#">Mentions légales</a></li>
+         <li><a href="mailto:ohmyfood@gmail.com">Contact</a></li>
+      </ul>
    </footer>
 </body>
 
