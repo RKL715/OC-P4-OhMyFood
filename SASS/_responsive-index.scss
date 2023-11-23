@@ -12,20 +12,19 @@
   }
   // tuto
   .fonction {
-    margin-left: 7rem;
-  }
-  .tuto_part {
-    .tuto__steps {
-      display: flex;
-      flex-direction: row;
-      justify-content: center;
-      gap: 3%;
-      .tuto__steps_card {
-        width: 400px;
-        padding: 0%;
-      }
-      .number {
-        top: 5px;
+    .tuto_part {
+      .tuto__steps {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        gap: 3%;
+        .tuto__steps_card {
+          width: 400px;
+          padding: 0%;
+        }
+        .number {
+          top: 5px;
+        }
       }
     }
   }
