@@ -294,21 +294,21 @@ svg path:hover {
 
 @keyframes valid-in {
   from {
-    transform: translateX(150%);
+    transform: translateX(100%);
     display: none;
   }
   to {
     transform: translateX(0%);
-    display: flex;
+    display: none;
   }
 }
 @keyframes valid-out {
   from {
     transform: translateX(0%);
-    display: flex;
+    display: none;
   }
   to {
-    transform: translateX(150%);
+    transform: translateX(100%);
     display: none;
   }
 }
@@ -415,20 +415,15 @@ svg path:hover {
 }
 
 .menu_carte:hover .valid {
-  display: flex;
   justify-self: flex-end;
-  opacity: 1;
-  display: flex;
   animation: valid-in 0.3s forwards;
+  visibility: visible;
 }
 
+.menu_carte {
+  overflow: hidden;
+}
 .menu_carte .valid {
-  animation: valid-out 0.3s forwards;
-  opacity: 0;
-  transition: opacity 250ms;
-}
-
-.valid {
   background-color: #99e2d0;
   border-radius: 0 15px 15px 0;
   height: 4.5rem;
@@ -439,8 +434,11 @@ svg path:hover {
   cursor: pointer;
   margin-left: 0;
   padding-left: 0;
+  overflow: hidden;
+  animation: valid-out 0.3s forwards;
+  visibility: collapse;
 }
-.valid .valid_icon {
+.menu_carte .valid .valid_icon {
   color: #99e2d0;
   transform: scaleX(-1) rotate(-40deg);
   font-family: Arial, Helvetica, sans-serif;
@@ -484,21 +482,21 @@ svg path:hover {
 
 @keyframes valid-in {
   from {
-    transform: translateX(150%);
+    transform: translateX(100%);
     display: none;
   }
   to {
     transform: translateX(0%);
-    display: flex;
+    display: none;
   }
 }
 @keyframes valid-out {
   from {
     transform: translateX(0%);
-    display: flex;
+    display: none;
   }
   to {
-    transform: translateX(150%);
+    transform: translateX(100%);
     display: none;
   }
 }
