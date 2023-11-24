@@ -37,3 +37,24 @@ a {
   text-decoration: none;
   color: black;
 }
+
+// COEUR
+.heart {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+svg {
+  path {
+    fill: url(#linear-hover);
+    fill-opacity: 0;
+    stroke: black;
+    stroke-opacity: 1;
+    transition: fill-opacity 0.5s linear, stroke-opacity 0.5s linear;
+  }
+  path:hover {
+    fill-opacity: 1;
+    stroke-opacity: 0;
+  }
+}

@@ -1,6 +1,5 @@
 @import '_variables';
 @import '_mixins';
-@import '_animations';
 
 // Animations
 .menu_carte_entrees {
@@ -83,4 +82,14 @@
   margin-top: 40px;
   display: flex;
   justify-content: center;
+}
+
+// KEYFRAMES affichage menus
+@keyframes comeIn {
+  from {
+    transform: scale(0);
+  }
+  to {
+    transform: scale(1);
+  }
 }
