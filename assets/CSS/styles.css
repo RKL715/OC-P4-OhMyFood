@@ -37,6 +37,24 @@ a {
   color: black;
 }
 
+.heart {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+svg path {
+  fill: url(#linear-hover);
+  fill-opacity: 0;
+  stroke: black;
+  stroke-opacity: 1;
+  transition: fill-opacity 0.5s linear, stroke-opacity 0.5s linear;
+}
+svg path:hover {
+  fill-opacity: 1;
+  stroke-opacity: 0;
+}
+
 header {
   display: flex;
   justify-content: center;
@@ -266,48 +284,6 @@ footer ul a {
   justify-content: flex-end;
 }
 
-@keyframes comeIn {
-  from {
-    transform: scale(0);
-  }
-  to {
-    transform: scale(1);
-  }
-}
-.heart {
-  background-color: transparent;
-  border: none;
-  cursor: pointer;
-}
-
-svg path {
-  fill: url(#linear-hover);
-  fill-opacity: 0;
-  stroke: black;
-  stroke-opacity: 1;
-  transition: fill-opacity 0.5s linear, stroke-opacity 0.5s linear;
-}
-svg path:hover {
-  fill-opacity: 1;
-  stroke-opacity: 0;
-}
-
-@keyframes valid-in {
-  from {
-    transform: translateX(100%);
-  }
-  to {
-    transform: translateX(0%);
-  }
-}
-@keyframes valid-out {
-  from {
-    transform: translateX(0%);
-  }
-  to {
-    transform: translateX(100%);
-  }
-}
 .menu_carte_entrees {
   animation: comeIn 0.5s cubic-bezier(1, 0.03, 0.83, 0.67);
 }
@@ -410,12 +386,14 @@ svg path:hover {
   opacity: 85%;
 }
 
-.menu_carte:hover .valid {
-  justify-self: flex-end;
-  animation: valid-in 0.3s forwards;
-  visibility: visible;
+@keyframes comeIn {
+  from {
+    transform: scale(0);
+  }
+  to {
+    transform: scale(1);
+  }
 }
-
 .menu_carte {
   overflow: hidden;
 }
@@ -431,8 +409,6 @@ svg path:hover {
   margin-left: 0;
   padding-left: 0;
   overflow: hidden;
-  animation: valid-out 0.3s forwards;
-  visibility: collapse;
 }
 .menu_carte .valid .valid_icon {
   color: #99e2d0;
@@ -450,30 +426,14 @@ svg path:hover {
   cursor: pointer;
 }
 
-@keyframes comeIn {
-  from {
-    transform: scale(0);
-  }
-  to {
-    transform: scale(1);
-  }
+.menu_carte .valid {
+  animation: valid-out 0.3s forwards;
+  visibility: collapse;
 }
-.heart {
-  background-color: transparent;
-  border: none;
-  cursor: pointer;
-}
-
-svg path {
-  fill: url(#linear-hover);
-  fill-opacity: 0;
-  stroke: black;
-  stroke-opacity: 1;
-  transition: fill-opacity 0.5s linear, stroke-opacity 0.5s linear;
-}
-svg path:hover {
-  fill-opacity: 1;
-  stroke-opacity: 0;
+.menu_carte:hover .valid {
+  justify-self: flex-end;
+  animation: valid-in 0.3s forwards;
+  visibility: visible;
 }
 
 @keyframes valid-in {

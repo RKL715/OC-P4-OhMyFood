@@ -1,13 +1,6 @@
 @import '_variables';
 @import '_mixins';
 
-.menu_carte:hover {
-  .valid {
-    justify-self: flex-end;
-    animation: valid-in 0.3s forwards;
-    visibility: visible;
-  }
-}
 .menu_carte {
   overflow: hidden;
   .valid {
@@ -22,9 +15,6 @@
     margin-left: 0;
     padding-left: 0;
     overflow: hidden;
-    // Animation
-    animation: valid-out 0.3s forwards;
-    visibility: collapse;
     .valid_icon {
       color: $tertiary-color;
       transform: scaleX(-1) rotate(-40deg);
@@ -40,5 +30,38 @@
       align-items: center;
       cursor: pointer;
     }
+  }
+}
+
+// ANIMATIONS
+.menu_carte {
+  .valid {
+    animation: valid-out 0.3s forwards;
+    visibility: collapse;
+  }
+  &:hover {
+    .valid {
+      justify-self: flex-end;
+      animation: valid-in 0.3s forwards;
+      visibility: visible;
+    }
+  }
+}
+// KEYFRAMES
+@keyframes valid-in {
+  from {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(0%);
+  }
+}
+
+@keyframes valid-out {
+  from {
+    transform: translateX(0%);
+  }
+  to {
+    transform: translateX(100%);
   }
 }
