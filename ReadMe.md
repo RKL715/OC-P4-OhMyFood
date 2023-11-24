@@ -39,7 +39,7 @@ Tertiaire : #99E2D0
 
 **Menus (x4)**
 
-- [ ] Menu des restaurants
+- [x] Menu des restaurants
 
 **Footer**
 
@@ -61,7 +61,7 @@ Tertiaire : #99E2D0
 
 **Main page**
 
-- [ ] Un “loader”, design libre mais respect charte grpahique du site.
+- [x] Un “loader”, design libre mais respect charte grpahique du site.
       Temps d'affichage : 1 à 3 secs.
       Où : Main page, couverture intégrale de l'écran.
       Comment : Animation CSS uniquement.
@@ -78,4 +78,4 @@ Tertiaire : #99E2D0
 **Responsive**
 
 - [x] Mobile first
-- [ ] Format tab & desktop
+- [x] Format desktop

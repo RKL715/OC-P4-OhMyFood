@@ -32,22 +32,18 @@ svg {
 // VALID
 @keyframes valid-in {
   from {
-    transform: translateX(150%);
-    display: none;
+    transform: translateX(100%);
   }
   to {
     transform: translateX(0%);
-    display: flex;
   }
 }
 
 @keyframes valid-out {
   from {
     transform: translateX(0%);
-    display: flex;
   }
   to {
-    transform: translateX(150%);
-    display: none;
+    transform: translateX(100%);
   }
 }
